@@ -175,6 +175,10 @@ bool File::mkpath(const String& path, int permissions) {
 	return (status);
 }
 
+const String File::getFileName() const {
+	return name;
+}
+
 const String File::getBaseName() const {
 	static std::mutex guard;
 	std::unique_lock<std::mutex> lock(guard);
