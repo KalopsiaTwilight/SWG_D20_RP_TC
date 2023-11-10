@@ -40,6 +40,7 @@ namespace io {
 		}
 
 		void close() override;
+		void closeLog(bool force = false);
 		int write(const char* str, int len) override;
 		void rotatefile(bool force = false) const;
 
