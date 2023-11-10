@@ -564,7 +564,7 @@ String Logger::msToString(uint64 milli) {
 		float secs = milli / 1000.0f;
 		output << secs << " s";
 	} else {
-		output << commas << milli << " ms";
+		output << milli << " ms";
 	}
 	return output.toString();
 }
